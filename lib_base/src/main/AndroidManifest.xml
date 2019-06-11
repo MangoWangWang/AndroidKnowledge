@@ -3,8 +3,16 @@
     package="com.chanpay.lib_base">
 
     <application>
-        <activity android:name=".lifecycle.LifecycleActivity"></activity>
+        <activity android:name=".service.ServiceActivity"/>
+        <activity android:name=".activity.LifecycleActivity" />
         <activity android:name=".BaseKnowActivity" />
+
+        <!--注册服务-->
+        <service android:name=".service.MyService">
+        </service>
+
     </application>
+
+
 
 </manifest>

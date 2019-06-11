@@ -1,4 +1,4 @@
-package com.chanpay.lib_base.lifecycle;
+package com.chanpay.lib_base.activity;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
