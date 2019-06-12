@@ -6,9 +6,14 @@
         <activity android:name=".service.ServiceActivity"/>
         <activity android:name=".activity.LifecycleActivity" />
         <activity android:name=".BaseKnowActivity" />
+        <activity android:name=".service.IntentServiceActivity"/>
 
         <!--注册服务-->
         <service android:name=".service.MyService">
+        </service>
+
+        <service
+            android:name=".service.MyIntentService">
         </service>
 
     </application>

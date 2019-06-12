@@ -29,6 +29,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:onClick="StartIntentServiceActivity"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_service"
+        android:textAllCaps="false"
+        android:text="IntentService的应用"
+        android:id="@+id/bt_intent_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </android.support.constraint.ConstraintLayout>

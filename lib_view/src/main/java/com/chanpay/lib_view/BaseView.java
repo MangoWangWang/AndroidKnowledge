@@ -71,7 +71,7 @@ public abstract class BaseView extends View {
         super.onSizeChanged(w, h, oldw, oldh);
         mWidth = getMeasuredWidth();
         mHeight = getMeasuredHeight();
-        mCenterX = mHeight /2;
+        mCenterX = mWidth /2;
         mCenterY = mHeight / 2;
     }
 

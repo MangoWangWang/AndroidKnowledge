@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.chanpay.lib_base.activity.LifecycleActivity;
+import com.chanpay.lib_base.service.IntentServiceActivity;
 import com.chanpay.lib_base.service.ServiceActivity;
 
 public class BaseKnowActivity extends AppCompatActivity {
@@ -29,5 +30,9 @@ public class BaseKnowActivity extends AppCompatActivity {
     public void StartServiceActivity(View view) {
 
         startActivity(new Intent(this, ServiceActivity.class));
+    }
+
+    public void StartIntentServiceActivity(View view) {
+        startActivity(new Intent(this, IntentServiceActivity.class));
     }
 }

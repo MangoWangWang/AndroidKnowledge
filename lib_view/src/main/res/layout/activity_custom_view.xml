@@ -7,7 +7,6 @@
     tools:context=".CustomViewActivity">
 
     <com.chanpay.lib_view.ProgressView
-        android:background="#2196F3"
         android:id="@+id/progressView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
