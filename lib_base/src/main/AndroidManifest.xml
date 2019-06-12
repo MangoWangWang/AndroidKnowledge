@@ -7,6 +7,7 @@
         <activity android:name=".activity.LifecycleActivity" />
         <activity android:name=".BaseKnowActivity" />
         <activity android:name=".service.IntentServiceActivity"/>
+        <activity android:name=".broadcastReceiver.BroadcastReceiverActivity"/>
 
         <!--注册服务-->
         <service android:name=".service.MyService">

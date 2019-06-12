@@ -66,6 +66,7 @@ public class MyIntentService extends IntentService {
         intent.putExtra("status", status);
         intent.putExtra("progress", progress);
         mLocalBroadcastManager.sendBroadcast(intent);
+
     }
 
     @Override

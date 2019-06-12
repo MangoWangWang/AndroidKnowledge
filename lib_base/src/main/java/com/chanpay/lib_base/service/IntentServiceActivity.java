@@ -69,7 +69,6 @@ public class IntentServiceActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             switch (intent.getAction()) {
-
                 case ACTION_TYPE_THREAD:
                     //更改UI
                     int progress = intent.getIntExtra("progress", 0);
