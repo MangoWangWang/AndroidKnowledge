@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CustomViewActivity">
 
-    <com.chanpay.lib_view.ProgressView
+    <com.chanpay.lib_view.RectProgressView
         android:id="@+id/progressView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

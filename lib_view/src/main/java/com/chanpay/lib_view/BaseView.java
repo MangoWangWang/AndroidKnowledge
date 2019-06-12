@@ -63,7 +63,7 @@ public abstract class BaseView extends View {
     public BaseView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initCoordinate(context);
-        init(context);
+        init(context,attrs);
     }
 
     @Override
@@ -151,7 +151,7 @@ public abstract class BaseView extends View {
      * 继承初始化
      * @param context
      */
-    protected abstract void init(Context context);
+    protected abstract void init(Context context,AttributeSet attrs);
 
 
     /**

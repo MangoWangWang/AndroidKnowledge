@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RectProgressView">
+        <!--进度条背景颜色-->
+        <attr name="shapeBgColor" format="color"/>
+        <!--文字颜色-->
+        <attr name="textColor" format="color"/>
+        <!--线条颜色-->
+        <attr name="lineColor" format="color"/>
+        <!--进度一颜色-->
+        <attr name="progressOneColor" format="color"/>
+        <!--进度二颜色-->
+        <attr name="progressTwoColor" format="color"/>
+        <!--进度三颜色-->
+        <attr name="progressThreeColor" format="color"/>
+        <!--进度四颜色-->
+        <attr name="progressFourColor" format="color"/>
+        <!--类型一名称-->
+        <attr name="typeOneName" format="string"/>
+        <!--类型二名称-->
+        <attr name="typeTwoName" format="string"/>
+        <!--类型三名称-->
+        <attr name="typeThreeName" format="string"/>
+        <!--类型四名称-->
+        <attr name="typeFourName" format="string"/>
+        <!--文字大小-->
+        <attr name="textSize" format="dimension"/>
+        <!--线条大小-->
+        <attr name="lineSize" format="dimension"/>
+    </declare-styleable>
+
+
+</resources>
