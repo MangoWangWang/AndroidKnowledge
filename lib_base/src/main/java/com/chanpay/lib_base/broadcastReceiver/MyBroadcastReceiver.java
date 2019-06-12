@@ -8,7 +8,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.widget.Toast;
 
-public class MyBroadcastReceiverTwo extends BroadcastReceiver {
+public class MyBroadcastReceiver extends BroadcastReceiver {
     public final static String ACTION_TYPE_OUT = "action.type.out";
 
 
