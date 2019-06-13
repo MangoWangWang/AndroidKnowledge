@@ -149,7 +149,7 @@ public class ImageNumberView extends FrameLayout {
             numberFirst = numberFirst.replaceAll("[^\\d]+", "");
             // 获取前11位
             if (numberFirst.length() > 11) {
-                numberFirst = numberFirst.substring(numberFirst.length()-11);
+                numberFirst = numberFirst.substring(numberFirst.length() - 11);
             }
 
             // 将String 转位Char类型数组
@@ -242,7 +242,6 @@ public class ImageNumberView extends FrameLayout {
                 }
                 numberPointList.get(i).setImageResource(resIdSecond);
             }
-
         }
 
     }

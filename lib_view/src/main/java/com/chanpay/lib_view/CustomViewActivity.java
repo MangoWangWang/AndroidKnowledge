@@ -26,7 +26,8 @@ public class CustomViewActivity extends AppCompatActivity {
         number.add("88.00");
         number.add("88.00");
         progressView.setData(present,number);
+
         imageNumberView = findViewById(R.id.imageNumberView);
-        imageNumberView.analyString("100000000.98");
+        imageNumberView.analyString("12345678901.12");
     }
 }
