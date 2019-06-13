@@ -17,8 +17,9 @@ import android.widget.Toast;
 
 import java.util.List;
 
-public class RectProgressView extends BaseView {
 
+/*四边形进度条*/
+public class RectProgressView extends BaseView {
 
     private Paint mPaint;
     private Paint mCirclePaint;
