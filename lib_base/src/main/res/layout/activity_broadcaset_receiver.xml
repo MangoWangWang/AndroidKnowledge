@@ -4,6 +4,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RadioGroup
+        android:id="@+id/rg_broadcast"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_normal"
+            android:checked="true"
+            android:text="Normal Broadcast(普通广播)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_system"
+            android:text="System Broadcast(系统广播)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_ordered"
+            android:text="Ordered Broadcast(有序广播)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_sticky"
+            android:text="Sticky Broadcast(粘性广播)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_location"
+            android:text="Local Broadcast(App应用内广播)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </RadioGroup>
+
     <Button
         android:layout_centerInParent="true"
         android:text="发送广播"
@@ -11,6 +54,9 @@
         android:onClick="onClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+
+
 
 
 
