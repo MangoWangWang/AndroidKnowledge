@@ -3,22 +3,14 @@
     package="com.chanpay.lib_base">
 
     <application>
-        <activity android:name=".service.ServiceActivity"/>
+        <activity android:name=".sqllite.SqlLiteActivity"></activity>
+        <activity android:name=".service.ServiceActivity" />
         <activity android:name=".activity.LifecycleActivity" />
         <activity android:name=".BaseKnowActivity" />
-        <activity android:name=".service.IntentServiceActivity"/>
-        <activity android:name=".broadcastReceiver.BroadcastReceiverActivity"/>
-
-        <!--注册服务-->
-        <service android:name=".service.MyService">
-        </service>
-
-        <service
-            android:name=".service.MyIntentService">
-        </service>
-
+        <activity android:name=".service.IntentServiceActivity" />
+        <activity android:name=".broadcastReceiver.BroadcastReceiverActivity" /> <!-- 注册服务 -->
+        <service android:name=".service.MyService"></service>
+        <service android:name=".service.MyIntentService"></service>
     </application>
-
-
 
 </manifest>

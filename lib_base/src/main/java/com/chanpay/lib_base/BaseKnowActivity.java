@@ -10,6 +10,7 @@ import com.chanpay.lib_base.activity.LifecycleActivity;
 import com.chanpay.lib_base.broadcastReceiver.BroadcastReceiverActivity;
 import com.chanpay.lib_base.service.IntentServiceActivity;
 import com.chanpay.lib_base.service.ServiceActivity;
+import com.chanpay.lib_base.sqllite.SqlLiteActivity;
 
 public class BaseKnowActivity extends AppCompatActivity {
 
@@ -40,4 +41,7 @@ public class BaseKnowActivity extends AppCompatActivity {
     public void StartBroadcastReceiverActivity(View view) {
         startActivity(new Intent(this, BroadcastReceiverActivity.class));
     }
+
+    public void StartSqlliteActivity(View view) {
+        startActivity(new Intent(this, SqlLiteActivity.class));    }
 }
