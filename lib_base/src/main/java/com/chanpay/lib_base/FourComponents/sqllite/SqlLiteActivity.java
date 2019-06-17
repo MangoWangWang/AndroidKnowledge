@@ -1,4 +1,4 @@
-package com.chanpay.lib_base.sqllite;
+package com.chanpay.lib_base.FourComponents.sqllite;
 
 import android.content.ContentValues;
 import android.database.Cursor;

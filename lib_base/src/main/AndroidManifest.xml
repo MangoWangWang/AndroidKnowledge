@@ -3,14 +3,22 @@
     package="com.chanpay.lib_base">
 
     <application>
-        <activity android:name=".sqllite.SqlLiteActivity"></activity>
-        <activity android:name=".service.ServiceActivity" />
-        <activity android:name=".activity.LifecycleActivity" />
-        <activity android:name=".BaseKnowActivity" />
-        <activity android:name=".service.IntentServiceActivity" />
-        <activity android:name=".broadcastReceiver.BroadcastReceiverActivity" /> <!-- 注册服务 -->
-        <service android:name=".service.MyService"></service>
-        <service android:name=".service.MyIntentService"></service>
+        <activity android:name=".LayoutUse.ConstraintLayoutActivity"></activity>
+        <activity android:name=".LayoutUse.TableLayoutActivity" />
+        <activity android:name=".LayoutUse.RelativeLayoutActivity" />
+        <activity android:name=".LayoutUse.AbsoluteLayoutActivity" />
+        <activity android:name=".LayoutUse.linearLayout.LinearLayoutActivity" />
+        <activity android:name=".LayoutUse.LayoutActivity" />
+        <activity android:name=".LayoutUse.framelayout.FrameLayoutActivity" />
+        <activity android:name=".FourComponents.sqllite.SqlLiteActivity" />
+        <activity android:name=".FourComponents.service.ServiceActivity" />
+        <activity android:name=".FourComponents.activity.LifecycleActivity" />
+        <activity android:name=".FourComponents.FourComponentsActivity" />
+        <activity android:name=".FourComponents.service.IntentServiceActivity" />
+        <activity android:name=".FourComponents.broadcastReceiver.BroadcastReceiverActivity" />
+        <activity android:name=".BaseKnowledgeActivity" /> <!-- 注册服务 -->
+        <service android:name=".FourComponents.service.MyService" />
+        <service android:name=".FourComponents.service.MyIntentService" />
     </application>
 
 </manifest>

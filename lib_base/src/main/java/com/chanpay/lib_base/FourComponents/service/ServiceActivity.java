@@ -1,4 +1,4 @@
-package com.chanpay.lib_base.service;
+package com.chanpay.lib_base.FourComponents.service;
 
 import android.content.ComponentName;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package com.chanpay.lib_base.sqllite;
+package com.chanpay.lib_base.FourComponents.sqllite;
 
 /**
  * 文件名 : MySQLiteOpenHelper

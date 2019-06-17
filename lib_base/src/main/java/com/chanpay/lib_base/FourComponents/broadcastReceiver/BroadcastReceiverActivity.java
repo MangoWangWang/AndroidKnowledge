@@ -1,4 +1,4 @@
-package com.chanpay.lib_base.broadcastReceiver;
+package com.chanpay.lib_base.FourComponents.broadcastReceiver;
 
 import android.content.Intent;
 import android.content.IntentFilter;

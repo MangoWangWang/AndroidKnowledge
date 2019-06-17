@@ -1,6 +1,5 @@
-package com.chanpay.lib_base.broadcastReceiver;
+package com.chanpay.lib_base.FourComponents.broadcastReceiver;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
