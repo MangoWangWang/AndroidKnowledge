@@ -3,7 +3,8 @@
     package="com.chanpay.lib_base">
 
     <application>
-        <activity android:name=".LayoutUse.ConstraintLayoutActivity"></activity>
+        <activity android:name=".Thread.ThreadActivity"></activity>
+        <activity android:name=".LayoutUse.ConstraintLayoutActivity" />
         <activity android:name=".LayoutUse.TableLayoutActivity" />
         <activity android:name=".LayoutUse.RelativeLayoutActivity" />
         <activity android:name=".LayoutUse.AbsoluteLayoutActivity" />

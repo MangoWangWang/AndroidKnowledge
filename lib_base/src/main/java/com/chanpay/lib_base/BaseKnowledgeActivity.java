@@ -13,6 +13,7 @@ import com.chanpay.lib_base.FourComponents.service.IntentServiceActivity;
 import com.chanpay.lib_base.FourComponents.service.ServiceActivity;
 import com.chanpay.lib_base.FourComponents.sqllite.SqlLiteActivity;
 import com.chanpay.lib_base.LayoutUse.LayoutActivity;
+import com.chanpay.lib_base.Thread.ThreadActivity;
 
 public class BaseKnowledgeActivity extends AppCompatActivity {
 
@@ -33,5 +34,9 @@ public class BaseKnowledgeActivity extends AppCompatActivity {
 
     public void StartLayoutActivity(View view) {
         startActivity(new Intent(BaseKnowledgeActivity.this,LayoutActivity.class));
+    }
+
+    public void StartThreadActivity(View view) {
+        startActivity(new Intent(BaseKnowledgeActivity.this, ThreadActivity.class));
     }
 }

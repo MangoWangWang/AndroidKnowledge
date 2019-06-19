@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Thread.ThreadActivity">
+
+
+    <Button
+        android:onClick="StopThread"
+        android:id="@+id/btn_stop_thread"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Stop Thread"
+        android:textAllCaps="false"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_thread"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_thread"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="StartThread"
+        android:text="Thread"
+        android:textAllCaps="false"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_stop_thread"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_runnable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="StartRunnable"
+        android:text="Runnable"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_thread" />
+
+
+    <Button
+        android:id="@+id/btn_handler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="StartHandler"
+        android:text="Handler"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_runnable" />
+
+
+    <Button
+        android:id="@+id/btn_asyc_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AsycTask"
+        android:onClick="StartAsycTask"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_handler" />
+
+
+    <Button
+        android:id="@+id/btn_intent_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="StartIntentService"
+        android:text="Intent Service"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asyc_task" />
+
+    <Button
+        android:id="@+id/btn_handler_thread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="StartHandlerThread"
+        android:text="Handler Thread"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_intent_service" />
+
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="StartHandlerThread"
+        android:text="内容"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_handler_thread" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_centerInParent="true"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点我加载"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_below="@+id/button"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还没开始加载!" />
+
+        <ProgressBar
+            android:layout_below="@+id/text"
+            android:id="@+id/progress_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+        <Button
+            android:layout_below="@+id/progress_bar"
+            android:layout_centerInParent="true"
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
