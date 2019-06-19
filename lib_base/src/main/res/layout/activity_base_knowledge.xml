@@ -28,13 +28,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
-
+        android:id="@+id/btn_thread"
         android:onClick="StartThreadActivity"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:textAllCaps="false"
         android:text="多线程使用"
         app:layout_constraintTop_toBottomOf="@+id/bt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+
+        android:onClick="StartAnimationActivity"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAllCaps="false"
+        android:text="动画的使用"
+        app:layout_constraintTop_toBottomOf="@+id/btn_thread"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

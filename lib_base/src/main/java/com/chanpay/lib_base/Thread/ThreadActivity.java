@@ -1,5 +1,6 @@
 package com.chanpay.lib_base.Thread;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.chanpay.lib_base.FourComponents.service.IntentServiceActivity;
 import com.chanpay.lib_base.R;
 
 public class ThreadActivity extends AppCompatActivity {
@@ -118,9 +120,11 @@ public class ThreadActivity extends AppCompatActivity {
     }
 
     public void StartIntentService(View view) {
+        startActivity(new Intent(ThreadActivity.this, IntentServiceActivity.class));
     }
 
     public void StartHandlerThread(View view) {
+        startActivity(new Intent(ThreadActivity.this, HandlerThreadActivity.class));
     }
 
     public void StopThread(View view) {

@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.chanpay.lib_base.Animation.AnimationActivity;
 import com.chanpay.lib_base.FourComponents.FourComponentsActivity;
 import com.chanpay.lib_base.FourComponents.activity.LifecycleActivity;
 import com.chanpay.lib_base.FourComponents.broadcastReceiver.BroadcastReceiverActivity;
@@ -38,5 +39,9 @@ public class BaseKnowledgeActivity extends AppCompatActivity {
 
     public void StartThreadActivity(View view) {
         startActivity(new Intent(BaseKnowledgeActivity.this, ThreadActivity.class));
+    }
+
+    public void StartAnimationActivity(View view) {
+        startActivity(new Intent(BaseKnowledgeActivity.this, AnimationActivity.class));
     }
 }
