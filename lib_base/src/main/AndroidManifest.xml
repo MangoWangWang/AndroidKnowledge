@@ -3,7 +3,8 @@
     package="com.chanpay.lib_base">
 
     <application>
-        <activity android:name=".Animation.TweenAnimationActivity"></activity>
+        <activity android:name=".Animation.ViewGroupAnimationActivity"></activity>
+        <activity android:name=".Animation.TweenAnimationActivity" />
         <activity android:name=".Animation.AnimationActivity" />
         <activity android:name=".Thread.HandlerThreadActivity" />
         <activity android:name=".Thread.ThreadActivity" />

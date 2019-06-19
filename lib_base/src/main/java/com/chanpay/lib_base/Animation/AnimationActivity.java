@@ -18,7 +18,17 @@ public class AnimationActivity extends AppCompatActivity {
 
     // 补间动画
     public void StartTweenAnimationActivity(View view) {
-        startActivity(new Intent(AnimationActivity.this,TweenAnimationActivity.class));
+
+        Intent intent = new Intent(AnimationActivity.this, TweenAnimationActivity.class);
+        startActivity(intent);
+        // 淡入淡出的动画效果
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
+        // 从左向右滑动的效果
+//        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
+
+//        startActivity(new Intent(AnimationActivity.this,TweenAnimationActivity.class));
     }
 
     // 属性动画
@@ -31,5 +41,9 @@ public class AnimationActivity extends AppCompatActivity {
 
     // 插值器和估值器
     public void StartInterpolatorAndTypeEvaluatornActivity(View view) {
+    }
+
+    public void StartViewGroupAnimationActivity(View view) {
+        startActivity(new Intent(AnimationActivity.this,ViewGroupAnimationActivity.class));
     }
 }

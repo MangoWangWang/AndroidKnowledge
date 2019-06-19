@@ -8,13 +8,18 @@ import android.view.View;
 
 import com.chanpay.lib_base.Animation.AnimationActivity;
 import com.chanpay.lib_base.FourComponents.FourComponentsActivity;
-import com.chanpay.lib_base.FourComponents.activity.LifecycleActivity;
-import com.chanpay.lib_base.FourComponents.broadcastReceiver.BroadcastReceiverActivity;
-import com.chanpay.lib_base.FourComponents.service.IntentServiceActivity;
-import com.chanpay.lib_base.FourComponents.service.ServiceActivity;
-import com.chanpay.lib_base.FourComponents.sqllite.SqlLiteActivity;
 import com.chanpay.lib_base.LayoutUse.LayoutActivity;
 import com.chanpay.lib_base.Thread.ThreadActivity;
+
+
+    /**
+         * 文件名 : BaseKnowledgeActivity.java
+         * 创建者 : TSW
+         * 创建日期 : 2019/6/19 16:26
+         * 微信 : MangoWaWang
+         * 邮箱 : 763482205@qq.com
+         * 描述 : TODO
+         */
 
 public class BaseKnowledgeActivity extends AppCompatActivity {
 

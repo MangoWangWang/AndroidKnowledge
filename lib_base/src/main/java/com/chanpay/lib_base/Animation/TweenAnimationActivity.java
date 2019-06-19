@@ -1,12 +1,10 @@
 package com.chanpay.lib_base.Animation;
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
-import android.view.animation.AnimationUtils;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
@@ -37,7 +35,7 @@ public class TweenAnimationActivity extends AppCompatActivity {
 
     public void translate(View view) {
 
-        Animation translateAnimation = new TranslateAnimation(0,500,0,500);
+        Animation translateAnimation = new TranslateAnimation(0, 500, 0, 500);
         // 步骤2：创建平移动画的对象：平移动画对应的Animation子类为TranslateAnimation
         // 参数分别是：
         // 1. fromXDelta ：视图在水平方向x 移动的起始值
@@ -52,7 +50,7 @@ public class TweenAnimationActivity extends AppCompatActivity {
 
     public void scale(View view) {
 
-        Animation scaleAnimation = new ScaleAnimation(0,2,0,2,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
+        Animation scaleAnimation = new ScaleAnimation(0, 2, 0, 2, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
         // 步骤2：创建缩放动画的对象 & 设置动画效果：缩放动画对应的Animation子类为RotateAnimation
         // 参数说明:
         // 1. fromX ：动画在水平方向X的结束缩放倍数
@@ -80,7 +78,7 @@ public class TweenAnimationActivity extends AppCompatActivity {
 
         // 步骤1:创建 需要设置动画的 视图View
 
-        Animation rotateAnimation = new RotateAnimation(0,270,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
+        Animation rotateAnimation = new RotateAnimation(0, 270, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
         // 步骤2：创建旋转动画的对象 & 设置动画效果：旋转动画对应的Animation子类为RotateAnimation
         // 参数说明:
         // 1. fromDegrees ：动画开始时 视图的旋转角度(正数 = 顺时针，负数 = 逆时针)
@@ -105,7 +103,7 @@ public class TweenAnimationActivity extends AppCompatActivity {
     public void alpha(View view) {
 
 
-        Animation alphaAnimation = new AlphaAnimation(1,0);
+        Animation alphaAnimation = new AlphaAnimation(1, 0);
         // 步骤2：创建透明度动画的对象 & 设置动画效果：透明度动画对应的Animation子类为AlphaAnimation
         // 参数说明:
         // 1. fromAlpha:动画开始时视图的透明度(取值范围: -1 ~ 1)
@@ -140,25 +138,25 @@ public class TweenAnimationActivity extends AppCompatActivity {
         // 步骤3:逐个创建子动画(方式同单个动画创建方式,此处不作过多描述)
 
         // 子动画1:旋转动画
-        Animation rotate = new RotateAnimation(0,360,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
+        Animation rotate = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
         rotate.setDuration(1000);
         rotate.setRepeatMode(Animation.RESTART);
         rotate.setRepeatCount(10);
 
         // 子动画2:平移动画
-        Animation translate = new TranslateAnimation(TranslateAnimation.RELATIVE_TO_PARENT,-0.5f,
-                TranslateAnimation.RELATIVE_TO_PARENT,0.5f,
-                TranslateAnimation.RELATIVE_TO_SELF,0
-                ,TranslateAnimation.RELATIVE_TO_SELF,0);
+        Animation translate = new TranslateAnimation(TranslateAnimation.RELATIVE_TO_PARENT, -0.5f,
+                TranslateAnimation.RELATIVE_TO_PARENT, 0.5f,
+                TranslateAnimation.RELATIVE_TO_SELF, 0
+                , TranslateAnimation.RELATIVE_TO_SELF, 0);
         translate.setDuration(10000);
 
         // 子动画3:透明度动画
-        Animation alpha = new AlphaAnimation(1,0);
+        Animation alpha = new AlphaAnimation(1, 0);
         alpha.setDuration(3000);
         alpha.setStartOffset(7000);
 
         // 子动画4:缩放动画
-        Animation scale1 = new ScaleAnimation(1,0.5f,1,0.5f,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
+        Animation scale1 = new ScaleAnimation(1, 0.5f, 1, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
         scale1.setDuration(1000);
         scale1.setStartOffset(4000);
 
@@ -168,29 +166,34 @@ public class TweenAnimationActivity extends AppCompatActivity {
         setAnimation.addAnimation(translate);
         setAnimation.addAnimation(scale1);
 
-        mButton.startAnimation(setAnimation);
         // 步骤5:播放动画
-
+        mButton.startAnimation(setAnimation);
 
         setAnimation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
                 // 动画开始时回调
-                Toast.makeText(TweenAnimationActivity.this,"动画开始时回调",Toast.LENGTH_SHORT).show();
+                Toast.makeText(TweenAnimationActivity.this, "动画开始时回调", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onAnimationEnd(Animation animation) {
                 // 动画结束时回调
-                Toast.makeText(TweenAnimationActivity.this,"动画结束时回调",Toast.LENGTH_SHORT).show();
+                Toast.makeText(TweenAnimationActivity.this, "动画结束时回调", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onAnimationRepeat(Animation animation) {
                 //动画重复执行的时候回调
-                Toast.makeText(TweenAnimationActivity.this,"动画重复执行的时候回调",Toast.LENGTH_SHORT).show();
+                Toast.makeText(TweenAnimationActivity.this, "动画重复执行的时候回调", Toast.LENGTH_SHORT).show();
             }
         });
+    }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // 淡入淡出的动画效果
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 }
