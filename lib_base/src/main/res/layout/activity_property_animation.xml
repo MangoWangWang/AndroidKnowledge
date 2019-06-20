@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Animation.PropertyAnimationActivity">
+
+    <Button
+        android:onClick="StartValueAnimationOfInt"
+        android:textAllCaps="false"
+        android:text="ValueAnimator.ofInt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="StartValueAnimationOfFloat"
+        android:textAllCaps="false"
+        android:text="ValueAnimator.oFloat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="StartValueAnimationOfObject"
+        android:textAllCaps="false"
+        android:text="ValueAnimator.ofObject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="StartObjectAnimator"
+        android:textAllCaps="false"
+        android:text="ObjectAnimator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="StartViewPropertyAnimator"
+        android:textAllCaps="false"
+        android:text="ViewPropertyAnimator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="ResetAnimation"
+        android:textAllCaps="false"
+        android:text="恢复状态"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_animation"
+            android:text="我是动画"
+            android:layout_gravity="center"
+            android:layout_width="250px"
+            android:layout_height="150px" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

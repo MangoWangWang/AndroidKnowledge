@@ -33,6 +33,7 @@ public class AnimationActivity extends AppCompatActivity {
 
     // 属性动画
     public void StartPropertyAnimationActivity(View view) {
+        startActivity(new Intent(AnimationActivity.this,PropertyAnimationActivity.class));
     }
 
     // 帧动画
@@ -46,4 +47,6 @@ public class AnimationActivity extends AppCompatActivity {
     public void StartViewGroupAnimationActivity(View view) {
         startActivity(new Intent(AnimationActivity.this,ViewGroupAnimationActivity.class));
     }
+
+
 }
