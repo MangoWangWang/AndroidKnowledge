@@ -38,6 +38,7 @@ public class AnimationActivity extends AppCompatActivity {
 
     // 帧动画
     public void StartFrameAnimationActivity(View view) {
+        startActivity(new Intent(AnimationActivity.this,FrameAnimationActivity.class));
     }
 
     // 插值器和估值器

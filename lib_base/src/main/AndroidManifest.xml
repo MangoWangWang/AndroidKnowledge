@@ -3,7 +3,8 @@
     package="com.chanpay.lib_base">
 
     <application>
-        <activity android:name=".Animation.ObjectAnimation.ObjectAnimationActivity"></activity>
+        <activity android:name=".Animation.FrameAnimationActivity"></activity>
+        <activity android:name=".Animation.ObjectAnimation.ObjectAnimationActivity" />
         <activity android:name=".Animation.TypeEvaluator.TypeEvaluatorActivity" />
         <activity android:name=".Animation.PropertyAnimationActivity" />
         <activity android:name=".Animation.ViewGroupAnimationActivity" />
