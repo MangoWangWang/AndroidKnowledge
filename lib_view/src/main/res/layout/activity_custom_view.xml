@@ -19,4 +19,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <com.chanpay.lib_view.SpreadView
+        android:id="@+id/spreadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:spread_center_color="#E91E63"
+
+        app:spread_radius="100"
+
+        app:spread_delay_milliseconds="35"
+
+        app:spread_distance="5"
+        app:spread_max_radius="90"
+
+        app:spread_spread_color="#009688" />
+
 </LinearLayout>

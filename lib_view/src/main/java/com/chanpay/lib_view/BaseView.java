@@ -84,6 +84,7 @@ public abstract class BaseView extends View {
         Log.e(TAG, "onMeasure: ");
         int width = getMeasureSize(true, widthMeasureSpec);
         int height = getMeasureSize(false, heightMeasureSpec);
+        // setMeasuredDimension（） = 存储测量后的View宽 / 高
         setMeasuredDimension(width, height);
     }
 
@@ -96,8 +97,12 @@ public abstract class BaseView extends View {
      */
     private int getMeasureSize(boolean isWidth, int measureSpec) {
         int result = 0;
-        int specSize = MeasureSpec.getSize(measureSpec);
+
+        // 1. 获取测量模式（Mode）
         int specMode = MeasureSpec.getMode(measureSpec);
+
+        // 2. 获取测量大小（Size）
+        int specSize = MeasureSpec.getSize(measureSpec);
 
         switch (specMode) {
             case MeasureSpec.UNSPECIFIED:
