@@ -19,19 +19,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <com.chanpay.lib_view.SpreadView
-        android:id="@+id/spreadView"
+
+    <com.chanpay.lib_view.banner.MZBannerView
+        android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:spread_center_color="#E91E63"
-
-        app:spread_radius="100"
-
-        app:spread_delay_milliseconds="35"
-
-        app:spread_distance="5"
-        app:spread_max_radius="90"
-
-        app:spread_spread_color="#009688" />
+        android:layout_height="207dp"
+        android:layout_marginTop="10dp"
+        app:open_mz_mode="true"
+        app:middle_page_cover="false"
+        app:canLoop="true"
+        app:indicatorAlign="center"
+        />
 
 </LinearLayout>

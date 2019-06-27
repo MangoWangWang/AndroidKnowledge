@@ -125,6 +125,19 @@ public abstract class BaseView extends View {
         return result;
     }
 
+
+    @Override
+    public void layout(int l, int t, int r, int b) {
+        super.layout(l, t, r, b);
+
+    }
+
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+
+    }
+
     /**
      * 初始化画笔
      * @param context
