@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <Button
+        android:onClick="startClickShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击事件分发" />
+
+    <Button
+        android:onClick="startCustomAnimationOrComponent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义动画或组件" />
+
+</LinearLayout>

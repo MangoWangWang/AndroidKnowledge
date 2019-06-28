@@ -19,6 +19,7 @@
 
 
     <Button
+        android:onClick="startAdvance"
         android:id="@+id/bt_adv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

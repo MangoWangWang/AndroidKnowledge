@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.chanpay.lib_adv.AdvanceActivity;
 import com.chanpay.lib_base.BaseKnowledgeActivity;
-import com.chanpay.lib_base.FourComponents.FourComponentsActivity;
 import com.chanpay.lib_view.CustomViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,5 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void startCustomView(View view) {
         startActivity(new Intent(this, CustomViewActivity.class));
+    }
+
+    public void startAdvance(View view) {
+        startActivity(new Intent(this, AdvanceActivity.class));
     }
 }
