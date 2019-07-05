@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".CustomViewActivity">
 
+
     <com.chanpay.lib_view.RectProgressView
         android:id="@+id/progressView"
         android:layout_width="wrap_content"
@@ -17,7 +18,7 @@
     <com.chanpay.lib_view.ImageNumberView
         android:id="@+id/imageNumberView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 
     <com.chanpay.lib_view.banner.MZBannerView
@@ -25,10 +26,19 @@
         android:layout_width="match_parent"
         android:layout_height="207dp"
         android:layout_marginTop="10dp"
-        app:open_mz_mode="true"
-        app:middle_page_cover="false"
+        android:visibility="gone"
         app:canLoop="true"
         app:indicatorAlign="center"
-        />
+        app:middle_page_cover="false"
+        app:open_mz_mode="true" />
+
+
+    <com.chanpay.lib_view.CircularProgressView
+        android:id="@+id/CircularProgressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.chanpay.lib_view.CircularProgressView>
+
 
 </LinearLayout>

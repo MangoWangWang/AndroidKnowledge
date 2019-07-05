@@ -3,7 +3,8 @@
     package="com.chanpay.lib_adv">
 
     <application>
-        <activity android:name=".ShareClickActivity"></activity>
+        <activity android:name=".CustomAnimation.CustomAnimationActivity"></activity>
+        <activity android:name=".ShareClickActivity" />
         <activity android:name=".AdvanceActivity" />
     </application>
 

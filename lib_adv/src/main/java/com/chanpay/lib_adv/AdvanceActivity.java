@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.chanpay.lib_adv.CustomAnimation.CustomAnimationActivity;
+
 public class AdvanceActivity extends AppCompatActivity {
 
     @Override
@@ -18,5 +20,6 @@ public class AdvanceActivity extends AppCompatActivity {
     }
 
     public void startCustomAnimationOrComponent(View view) {
+        startActivity(new Intent(AdvanceActivity.this, CustomAnimationActivity.class));
     }
 }

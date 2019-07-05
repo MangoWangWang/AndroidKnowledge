@@ -31,6 +31,22 @@
     </declare-styleable>
 
 
+    <declare-styleable name="CircularProgressView">
+
+        <!--进度一颜色-->
+        <attr name="ProgressFirstColor" format="color"/>
+        <!--进度二颜色-->
+        <attr name="ProgressSecondColor" format="color"/>
+        <!--装饰圆颜色-->
+        <attr name="DecorateCircularColor" format="color"/>
+
+    </declare-styleable>
+
+
+
+
+
+
     <declare-styleable name="SpreadView">
         <!--中心圆颜色-->
         <attr name="spread_center_color" format="color" />

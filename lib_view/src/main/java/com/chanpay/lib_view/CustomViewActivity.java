@@ -19,12 +19,14 @@ public class CustomViewActivity extends AppCompatActivity {
     RectProgressView progressView;
     ImageNumberView imageNumberView;
     MZBannerView mMZBanner;
+    CircularProgressView circularProgressView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_view);
         progressView = findViewById(R.id.progressView);
+        circularProgressView = findViewById(R.id.CircularProgressView);
         List<Double> present = new ArrayList<>();
         List<String> number = new ArrayList<>();
         present.add(0.1);
@@ -56,6 +58,8 @@ public class CustomViewActivity extends AppCompatActivity {
                 return new BannerViewHolder();
             }
         });
+
+        circularProgressView.setSweepAngle(270);
     }
 
 
