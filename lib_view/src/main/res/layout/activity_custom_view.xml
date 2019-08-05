@@ -34,11 +34,30 @@
 
 
     <com.chanpay.lib_view.CircularProgressView
+        android:visibility="gone"
         android:id="@+id/CircularProgressView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
     </com.chanpay.lib_view.CircularProgressView>
+
+    <com.chanpay.lib_view.PlaygroundProgressView
+        android:visibility="gone"
+        app:pvtype="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <com.chanpay.lib_view.FiveRuandProgressView
+        android:visibility="gone"
+        android:id="@+id/fiveRuandProgressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.chanpay.lib_view.CellProgressView
+        android:id="@+id/cell_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
 </LinearLayout>

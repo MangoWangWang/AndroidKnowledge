@@ -20,13 +20,17 @@ public class CustomViewActivity extends AppCompatActivity {
     ImageNumberView imageNumberView;
     MZBannerView mMZBanner;
     CircularProgressView circularProgressView;
+     FiveRuandProgressView fiveRuandProgressView;
+     CellProgressView cellProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_view);
         progressView = findViewById(R.id.progressView);
+        fiveRuandProgressView = findViewById(R.id.fiveRuandProgressView);
         circularProgressView = findViewById(R.id.CircularProgressView);
+        cellProgress = findViewById(R.id.cell_progress);
         List<Double> present = new ArrayList<>();
         List<String> number = new ArrayList<>();
         present.add(0.1);
@@ -60,6 +64,17 @@ public class CustomViewActivity extends AppCompatActivity {
         });
 
         circularProgressView.setSweepAngle(270);
+
+
+        List<Integer> datasss = new ArrayList<>();
+        datasss.add(1);
+        datasss.add(1);
+        datasss.add(1);
+        datasss.add(4);
+        datasss.add(1);
+        fiveRuandProgressView.setData(datasss,8);
+
+        cellProgress.setTextAndProgress("啊旺旺","1000",8,0);
     }
 
 
@@ -86,5 +101,7 @@ public class CustomViewActivity extends AppCompatActivity {
         super.onResume();
         mMZBanner.start();
     }
+
+
 }
 

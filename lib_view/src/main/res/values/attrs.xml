@@ -28,6 +28,40 @@
         <attr name="textSize" format="dimension"/>
         <!--线条大小-->
         <attr name="lineSize" format="dimension"/>
+        <!--统计类型-->
+        <attr name="type" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="PlaygroundProgressView">
+        <!--进度条背景颜色-->
+        <attr name="pvshapeBgColor" format="color"/>
+        <!--文字颜色-->
+        <attr name="pvtextColor" format="color"/>
+        <!--线条颜色-->
+        <attr name="pvlineColor" format="color"/>
+        <!--进度一颜色-->
+        <attr name="pvprogressOneColor" format="color"/>
+        <!--进度二颜色-->
+        <attr name="pvprogressTwoColor" format="color"/>
+        <!--进度三颜色-->
+        <attr name="pvprogressThreeColor" format="color"/>
+        <!--进度四颜色-->
+        <attr name="pvprogressFourColor" format="color"/>
+        <!--类型一名称-->
+        <attr name="pvtypeOneName" format="string"/>
+        <!--类型二名称-->
+        <attr name="pvtypeTwoName" format="string"/>
+        <!--类型三名称-->
+        <attr name="pvtypeThreeName" format="string"/>
+        <!--类型四名称-->
+        <attr name="pvtypeFourName" format="string"/>
+        <!--文字大小-->
+        <attr name="pvtextSize" format="dimension"/>
+        <!--线条大小-->
+        <attr name="pvlineSize" format="dimension"/>
+        <!--统计类型-->
+        <attr name="pvtype" format="integer"/>
     </declare-styleable>
 
 
