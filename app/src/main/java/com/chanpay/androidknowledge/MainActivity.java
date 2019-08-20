@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.chanpay.lib_adv.AdvanceActivity;
+import com.chanpay.lib_adv.CustomAnimation.CustomAnimationActivity;
 import com.chanpay.lib_base.BaseKnowledgeActivity;
 import com.chanpay.lib_view.CustomViewActivity;
+import com.chanpay.lib_view.looperView.LooperViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startCustomView(View view) {
-        startActivity(new Intent(this, CustomViewActivity.class));
+//        startActivity(new Intent(this, CustomViewActivity.class));
+        startActivity(new Intent(this, LooperViewActivity.class));
     }
 
     public void startAdvance(View view) {

@@ -19,9 +19,11 @@ public class CustomViewActivity extends AppCompatActivity {
     RectProgressView progressView;
     ImageNumberView imageNumberView;
     MZBannerView mMZBanner;
-    CircularProgressView circularProgressView;
+    CircularProgressPlusView circularProgressView;
      FiveRuandProgressView fiveRuandProgressView;
      CellProgressView cellProgress;
+     WheelCircleFiveView wheelCircleFive;
+     ActionProgressView action_progress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +32,9 @@ public class CustomViewActivity extends AppCompatActivity {
         progressView = findViewById(R.id.progressView);
         fiveRuandProgressView = findViewById(R.id.fiveRuandProgressView);
         circularProgressView = findViewById(R.id.CircularProgressView);
+        wheelCircleFive = findViewById(R.id.wheelCircleFive);
         cellProgress = findViewById(R.id.cell_progress);
+        action_progress = findViewById(R.id.action_progress);
         List<Double> present = new ArrayList<>();
         List<String> number = new ArrayList<>();
         present.add(0.1);
@@ -75,6 +79,14 @@ public class CustomViewActivity extends AppCompatActivity {
         fiveRuandProgressView.setData(datasss,8);
 
         cellProgress.setTextAndProgress("啊旺旺","1000",8,0);
+        wheelCircleFive.setDataDan(1,1,1,2,1,6);
+        List<RewardBean>  datas = new ArrayList<>();
+        datas.add(new RewardBean());
+        datas.add(new RewardBean());
+        datas.add(new RewardBean());
+        datas.add(new RewardBean());
+        action_progress.setDatas(datas);
+
     }
 
 

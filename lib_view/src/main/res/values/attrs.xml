@@ -112,4 +112,33 @@
             <attr name="middle_page_cover" format="boolean"/>
         </declare-styleable>
 
+    <declare-styleable name="wheelFiveView">
+        <attr name="OneCircleColor" format="color"/>
+        <attr name="TwoCircleColor" format="color"/>
+        <attr name="ThreeCircleColor" format="color"/>
+        <attr name="FourCircleColor" format="color"/>
+        <attr name="FiveCircleColor" format="color"/>
+        <attr name="animationTime" format="integer"/>
+        <attr name="clockViewTextColor" format="color"/>
+        <attr name="clockViewTextSize" format="dimension"/>
+        <attr name="hasText" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="LoopRotarySwitchView">
+        <attr name="orientation">
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
+        <attr name="autoRotation" format="boolean"/>
+        <attr name="r" format="dimension"/>
+
+        <attr name="direction">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+
 </resources>

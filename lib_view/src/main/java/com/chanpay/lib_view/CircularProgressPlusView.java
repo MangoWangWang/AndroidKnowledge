@@ -3,13 +3,10 @@ package com.chanpay.lib_view;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
-import android.graphics.Point;
-import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 
@@ -22,7 +19,7 @@ import android.util.AttributeSet;
  * 邮箱 : 763482205@qq.com
  * 描述 : TODO
  */
-public class CircularProgressView extends BaseView {
+public class CircularProgressPlusView extends BaseView {
 
     private Paint DecoratePaint;  // 装饰圆画笔
     private Paint FirstProgressPaint; // 第一进度条画笔
@@ -34,7 +31,7 @@ public class CircularProgressView extends BaseView {
     private int sweepAngle = 180; // 默认角度为一半
     private int StartAngle = -90; // 默认角度为一半
 
-    public CircularProgressView(Context context, @Nullable AttributeSet attrs) {
+    public CircularProgressPlusView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -43,9 +40,9 @@ public class CircularProgressView extends BaseView {
 
 
         // 默认颜色
-        ProgressFirstColor = Color.parseColor("#FDC67E");
-        ProgressSecondColor = Color.parseColor("#7ECEF4");
-        DecorateCircularColor = Color.parseColor("#F4EEE0");
+        ProgressFirstColor = Color.parseColor("#FFBA00");
+        ProgressSecondColor = Color.parseColor("#84CCC9");
+        DecorateCircularColor = Color.parseColor("#F4EDDF");
 
 
         TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.CircularProgressView);
@@ -61,8 +58,8 @@ public class CircularProgressView extends BaseView {
     @Override
     protected void init(Context context, AttributeSet attrs) {
         initData(context, attrs);
-        mWidth = dpToPx(213);
-        mHeight = dpToPx(213);
+        mWidth = dpToPx(210);
+        mHeight = dpToPx(210);
 
 
         // 初始化画笔
@@ -93,9 +90,9 @@ public class CircularProgressView extends BaseView {
 
         canvas.translate(mCenterX, mCenterY);
         DecoratePaint.setStrokeWidth(mWidth * 0.01f);
-        canvas.drawCircle(0, 0, mCenterX - 10, DecoratePaint);
-        DecoratePaint.setStrokeWidth(mWidth * 0.03f);
-        canvas.drawCircle(0, 0, mCenterX * 0.25f, DecoratePaint);
+        canvas.drawCircle(0, 0, mCenterX *0.92f, DecoratePaint);
+//        DecoratePaint.setStrokeWidth(mWidth * 0.03f);
+//        canvas.drawCircle(0, 0, mCenterX * 0.25f, DecoratePaint);
 
 
         SecondProgressPaint.setStrokeWidth(mWidth * 0.06f);

@@ -32,32 +32,58 @@
         app:middle_page_cover="false"
         app:open_mz_mode="true" />
 
-
-    <com.chanpay.lib_view.CircularProgressView
-        android:visibility="gone"
-        android:id="@+id/CircularProgressView"
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-    </com.chanpay.lib_view.CircularProgressView>
+        <com.chanpay.lib_view.CircularProgressPlusView
+            android:id="@+id/CircularProgressView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_jiantou"
+            android:rotation="45" />
+    </FrameLayout>
+
 
     <com.chanpay.lib_view.PlaygroundProgressView
-        android:visibility="gone"
-        app:pvtype="3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-         />
+        android:visibility="gone"
+        app:pvtype="3" />
 
     <com.chanpay.lib_view.FiveRuandProgressView
-        android:visibility="gone"
         android:id="@+id/fiveRuandProgressView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
 
     <com.chanpay.lib_view.CellProgressView
         android:id="@+id/cell_progress"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.chanpay.lib_view.WheelCircleFiveView
+        android:visibility="gone"
+        android:id="@+id/wheelCircleFive"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:FiveCircleColor="#84CCC9"
+        app:FourCircleColor="#F6B37F"
+        app:OneCircleColor="#FFBA00"
+        app:ThreeCircleColor="#BE88E8"
+        app:TwoCircleColor="#00B7EE" />
+
+    <com.chanpay.lib_view.ActionProgressView
+        android:id="@+id/action_progress"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
 
 
 </LinearLayout>
